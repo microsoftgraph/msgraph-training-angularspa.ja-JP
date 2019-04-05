@@ -1,50 +1,50 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-<span data-ttu-id="51182-101">コマンドラインインターフェイス (CLI) を開き、ファイルを作成する権限があるディレクトリに移動し、次のコマンドを実行して、[角度付き CLI](https://www.npmjs.com/package/@angular/cli)ツールをインストールし、新しい角度のアプリを作成します。</span><span class="sxs-lookup"><span data-stu-id="51182-101">Open your command-line interface (CLI), navigate to a directory where you have rights to create files, and run the following commands to install the [Angular CLI](https://www.npmjs.com/package/@angular/cli) tool and create a new Angular app.</span></span>
+<span data-ttu-id="9e427-101">コマンドラインインターフェイス (CLI) を開き、ファイルを作成する権限があるディレクトリに移動し、次のコマンドを実行して、[角度付き CLI](https://www.npmjs.com/package/@angular/cli)ツールをインストールし、新しい角度のアプリを作成します。</span><span class="sxs-lookup"><span data-stu-id="9e427-101">Open your command-line interface (CLI), navigate to a directory where you have rights to create files, and run the following commands to install the [Angular CLI](https://www.npmjs.com/package/@angular/cli) tool and create a new Angular app.</span></span>
 
 ```Shell
 npm install -g @angular/cli
 ng new graph-tutorial
 ```
 
-<span data-ttu-id="51182-102">角度 CLI は、詳細情報を求めるメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="51182-102">The Angular CLI will prompt for more information.</span></span> <span data-ttu-id="51182-103">プロンプトに次のように応答します。</span><span class="sxs-lookup"><span data-stu-id="51182-103">Answer the prompts as follows.</span></span>
+<span data-ttu-id="9e427-102">角度 CLI は、詳細情報を求めるメッセージを表示します。</span><span class="sxs-lookup"><span data-stu-id="9e427-102">The Angular CLI will prompt for more information.</span></span> <span data-ttu-id="9e427-103">プロンプトに次のように応答します。</span><span class="sxs-lookup"><span data-stu-id="9e427-103">Answer the prompts as follows.</span></span>
 
 ```Shell
 ? Would you like to add Angular routing? Yes
 ? Which stylesheet format would you like to use? CSS
 ```
 
-<span data-ttu-id="51182-104">コマンドが完了したら、CLI の`graph-tutorial`ディレクトリに移動し、次のコマンドを実行してローカル web サーバーを開始します。</span><span class="sxs-lookup"><span data-stu-id="51182-104">Once the command finishes, change to the `graph-tutorial` directory in your CLI and run the following command to start a local web server.</span></span>
+<span data-ttu-id="9e427-104">コマンドが完了したら、CLI の`graph-tutorial`ディレクトリに移動し、次のコマンドを実行してローカル web サーバーを開始します。</span><span class="sxs-lookup"><span data-stu-id="9e427-104">Once the command finishes, change to the `graph-tutorial` directory in your CLI and run the following command to start a local web server.</span></span>
 
 ```Shell
 ng serve --open
 ```
 
-<span data-ttu-id="51182-105">既定のブラウザーが開き[https://localhost:4200/](https://localhost:4200) 、既定の角度ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="51182-105">Your default browser opens to [https://localhost:4200/](https://localhost:4200) with a default Angular page.</span></span> <span data-ttu-id="51182-106">ブラウザーが開かない場合は、それを開き、 [https://localhost:4200/](https://localhost:4200)を参照して、新しいアプリが動作することを確認します。</span><span class="sxs-lookup"><span data-stu-id="51182-106">If your browser doesn't open, open it and browse to [https://localhost:4200/](https://localhost:4200) to verify that the new app works.</span></span>
+<span data-ttu-id="9e427-105">既定のブラウザーが開き[https://localhost:4200/](https://localhost:4200) 、既定の角度ページが表示されます。</span><span class="sxs-lookup"><span data-stu-id="9e427-105">Your default browser opens to [https://localhost:4200/](https://localhost:4200) with a default Angular page.</span></span> <span data-ttu-id="9e427-106">ブラウザーが開かない場合は、それを開き、 [https://localhost:4200/](https://localhost:4200)を参照して、新しいアプリが動作することを確認します。</span><span class="sxs-lookup"><span data-stu-id="9e427-106">If your browser doesn't open, open it and browse to [https://localhost:4200/](https://localhost:4200) to verify that the new app works.</span></span>
 
-<span data-ttu-id="51182-107">に進む前に、後で使用する追加のパッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="51182-107">Before moving on, install some additional packages that you will use later:</span></span>
+<span data-ttu-id="9e427-107">に進む前に、後で使用する追加のパッケージをインストールします。</span><span class="sxs-lookup"><span data-stu-id="9e427-107">Before moving on, install some additional packages that you will use later:</span></span>
 
-- <span data-ttu-id="51182-108">スタイル設定と共通コンポーネントの[ブートストラップ](https://github.com/twbs/bootstrap)。</span><span class="sxs-lookup"><span data-stu-id="51182-108">[bootstrap](https://github.com/twbs/bootstrap) for styling and common components.</span></span>
-- <span data-ttu-id="51182-109">角度からブートストラップコンポーネントを使用するための[ng](https://github.com/ng-bootstrap/ng-bootstrap) 。</span><span class="sxs-lookup"><span data-stu-id="51182-109">[ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) for using Bootstrap components from Angular.</span></span>
-- <span data-ttu-id="51182-110">角度で fontawesome アイコンを使用する[fontawesome](https://github.com/FortAwesome/angular-fontawesome) 。</span><span class="sxs-lookup"><span data-stu-id="51182-110">[angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome) to use FontAwesome icons in Angular.</span></span>
-- <span data-ttu-id="51182-111">サンプルで使用されている fontawesome アイコンの[fontawesome](https://github.com/FortAwesome/Font-Awesome)、[フリー (標準)](https://github.com/FortAwesome/Font-Awesome)の svg アイコン、および[フリーソリッドの svg アイコン](https://github.com/FortAwesome/Font-Awesome)。</span><span class="sxs-lookup"><span data-stu-id="51182-111">[fontawesome-svg-core](https://github.com/FortAwesome/Font-Awesome), [free-regular-svg-icons](https://github.com/FortAwesome/Font-Awesome), and [free-solid-svg-icons](https://github.com/FortAwesome/Font-Awesome) for the FontAwesome icons used in the sample.</span></span>
-- <span data-ttu-id="51182-112">日付と時刻を書式設定するための[モーメント](https://github.com/moment/moment)。</span><span class="sxs-lookup"><span data-stu-id="51182-112">[moment](https://github.com/moment/moment) for formatting dates and times.</span></span>
-- <span data-ttu-id="51182-113">Azure Active Directory に認証し、アクセストークンを取得するための[角度](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md)。</span><span class="sxs-lookup"><span data-stu-id="51182-113">[msal-angular](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md) for authenticating to Azure Active Directory and retrieving access tokens.</span></span>
-- <span data-ttu-id="51182-114">[rxjs](https://github.com/ReactiveX/rxjs/tree/master/compat)。 `msal-angular`パッケージに必要です。</span><span class="sxs-lookup"><span data-stu-id="51182-114">[rxjs-compat](https://github.com/ReactiveX/rxjs/tree/master/compat), required for the `msal-angular` package.</span></span>
-- <span data-ttu-id="51182-115">[microsoft graph-](https://github.com/microsoftgraph/msgraph-sdk-javascript) microsoft graph に電話をかけるためのクライアントです。</span><span class="sxs-lookup"><span data-stu-id="51182-115">[microsoft-graph-client](https://github.com/microsoftgraph/msgraph-sdk-javascript) for making calls to Microsoft Graph.</span></span>
+- <span data-ttu-id="9e427-108">スタイル設定と共通コンポーネントの[ブートストラップ](https://github.com/twbs/bootstrap)。</span><span class="sxs-lookup"><span data-stu-id="9e427-108">[bootstrap](https://github.com/twbs/bootstrap) for styling and common components.</span></span>
+- <span data-ttu-id="9e427-109">角度からブートストラップコンポーネントを使用するための[ng](https://github.com/ng-bootstrap/ng-bootstrap) 。</span><span class="sxs-lookup"><span data-stu-id="9e427-109">[ng-bootstrap](https://github.com/ng-bootstrap/ng-bootstrap) for using Bootstrap components from Angular.</span></span>
+- <span data-ttu-id="9e427-110">角度で fontawesome アイコンを使用する[fontawesome](https://github.com/FortAwesome/angular-fontawesome) 。</span><span class="sxs-lookup"><span data-stu-id="9e427-110">[angular-fontawesome](https://github.com/FortAwesome/angular-fontawesome) to use FontAwesome icons in Angular.</span></span>
+- <span data-ttu-id="9e427-111">サンプルで使用されている fontawesome アイコンの[fontawesome](https://github.com/FortAwesome/Font-Awesome)、[フリー (標準)](https://github.com/FortAwesome/Font-Awesome)の svg アイコン、および[フリーソリッドの svg アイコン](https://github.com/FortAwesome/Font-Awesome)。</span><span class="sxs-lookup"><span data-stu-id="9e427-111">[fontawesome-svg-core](https://github.com/FortAwesome/Font-Awesome), [free-regular-svg-icons](https://github.com/FortAwesome/Font-Awesome), and [free-solid-svg-icons](https://github.com/FortAwesome/Font-Awesome) for the FontAwesome icons used in the sample.</span></span>
+- <span data-ttu-id="9e427-112">日付と時刻を書式設定するための[モーメント](https://github.com/moment/moment)。</span><span class="sxs-lookup"><span data-stu-id="9e427-112">[moment](https://github.com/moment/moment) for formatting dates and times.</span></span>
+- <span data-ttu-id="9e427-113">Azure Active Directory に認証し、アクセストークンを取得するための[角度](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md)。</span><span class="sxs-lookup"><span data-stu-id="9e427-113">[msal-angular](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md) for authenticating to Azure Active Directory and retrieving access tokens.</span></span>
+- <span data-ttu-id="9e427-114">[rxjs](https://github.com/ReactiveX/rxjs/tree/master/compat)。 `msal-angular`パッケージに必要です。</span><span class="sxs-lookup"><span data-stu-id="9e427-114">[rxjs-compat](https://github.com/ReactiveX/rxjs/tree/master/compat), required for the `msal-angular` package.</span></span>
+- <span data-ttu-id="9e427-115">[microsoft graph-](https://github.com/microsoftgraph/msgraph-sdk-javascript) microsoft graph に電話をかけるためのクライアントです。</span><span class="sxs-lookup"><span data-stu-id="9e427-115">[microsoft-graph-client](https://github.com/microsoftgraph/msgraph-sdk-javascript) for making calls to Microsoft Graph.</span></span>
 
-<span data-ttu-id="51182-116">CLI で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="51182-116">Run the following command in your CLI.</span></span>
+<span data-ttu-id="9e427-116">CLI で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9e427-116">Run the following command in your CLI.</span></span>
 
 ```Shell
-npm install bootstrap@4.1.3 @fortawesome/angular-fontawesome@0.3.0 @fortawesome/fontawesome-svg-core@1.2.8
-npm install @fortawesome/free-regular-svg-icons@5.5.0 @fortawesome/free-solid-svg-icons@5.5.0
-npm install moment@2.22.2 moment-timezone@0.5.23 @ng-bootstrap/ng-bootstrap@4.0.0
-npm install @azure/msal-angular@0.1.2 rxjs-compat@6.3.3 @microsoft/microsoft-graph-client@1.3.0
+npm install bootstrap@4.3.1 @fortawesome/angular-fontawesome@0.3.0 @fortawesome/fontawesome-svg-core@1.2.15
+npm install @fortawesome/free-regular-svg-icons@5.7.2 @fortawesome/free-solid-svg-icons@5.7.2
+npm install moment@2.24.0 moment-timezone@0.5.23 @ng-bootstrap/ng-bootstrap@4.1.0
+npm install @azure/msal-angular@0.1.2 rxjs-compat@6.4.0 @microsoft/microsoft-graph-client@1.4.0
 ```
 
-## <a name="design-the-app"></a><span data-ttu-id="51182-117">アプリを設計する</span><span class="sxs-lookup"><span data-stu-id="51182-117">Design the app</span></span>
+## <a name="design-the-app"></a><span data-ttu-id="9e427-117">アプリを設計する</span><span class="sxs-lookup"><span data-stu-id="9e427-117">Design the app</span></span>
 
-<span data-ttu-id="51182-118">最初に、ブートストラップ CSS ファイルをアプリに追加して、いくつかのグローバルスタイルも追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-118">Start by adding the Bootstrap CSS files to the app, as well as some global styles.</span></span> <span data-ttu-id="51182-119">`./src/styles.css`を開き、次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-119">Open the `./src/styles.css` and add the following lines.</span></span>
+<span data-ttu-id="9e427-118">最初に、ブートストラップ CSS ファイルをアプリに追加して、いくつかのグローバルスタイルも追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-118">Start by adding the Bootstrap CSS files to the app, as well as some global styles.</span></span> <span data-ttu-id="9e427-119">`./src/styles.css`を開き、次の行を追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-119">Open the `./src/styles.css` and add the following lines.</span></span>
 
 ```CSS
 @import "~bootstrap/dist/css/bootstrap.css";
@@ -62,7 +62,7 @@ body {
 }
 ```
 
-<span data-ttu-id="51182-120">次に、ブートストラップモジュールと FontAwesome モジュールをアプリに追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-120">Next, add the Bootstrap and FontAwesome modules to the app.</span></span> <span data-ttu-id="51182-121">を`./src/app/app.module.ts`開き、次`import`のステートメントをファイルの先頭に追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-121">Open `./src/app/app.module.ts` and add the following `import` statements to the top of the file.</span></span>
+<span data-ttu-id="9e427-120">次に、ブートストラップモジュールと FontAwesome モジュールをアプリに追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-120">Next, add the Bootstrap and FontAwesome modules to the app.</span></span> <span data-ttu-id="9e427-121">を`./src/app/app.module.ts`開き、次`import`のステートメントをファイルの先頭に追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-121">Open `./src/app/app.module.ts` and add the following `import` statements to the top of the file.</span></span>
 
 ```TypeScript
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -72,14 +72,14 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 ```
 
-<span data-ttu-id="51182-122">その後、 `import`すべてのステートメントの後に次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-122">Then add the following code after all of the `import` statements.</span></span>
+<span data-ttu-id="9e427-122">その後、 `import`すべてのステートメントの後に次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-122">Then add the following code after all of the `import` statements.</span></span>
 
 ```TypeScript
 library.add(faExternalLinkAlt);
 library.add(faUserCircle);
 ```
 
-<span data-ttu-id="51182-123">`@NgModule`宣言で、既存`imports`の配列を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-123">In the `@NgModule` declaration, replace the existing `imports` array with the following.</span></span>
+<span data-ttu-id="9e427-123">`@NgModule`宣言で、既存`imports`の配列を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-123">In the `@NgModule` declaration, replace the existing `imports` array with the following.</span></span>
 
 ```TypeScript
 imports: [
@@ -90,13 +90,13 @@ imports: [
 ]
 ```
 
-<span data-ttu-id="51182-124">これで、ページ上のトップナビゲーションの角度コンポーネントが生成されます。</span><span class="sxs-lookup"><span data-stu-id="51182-124">Now generate an Angular component for the top navigation on the page.</span></span> <span data-ttu-id="51182-125">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="51182-125">In your CLI, run the following command.</span></span>
+<span data-ttu-id="9e427-124">これで、ページ上のトップナビゲーションの角度コンポーネントが生成されます。</span><span class="sxs-lookup"><span data-stu-id="9e427-124">Now generate an Angular component for the top navigation on the page.</span></span> <span data-ttu-id="9e427-125">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9e427-125">In your CLI, run the following command.</span></span>
 
 ```Shell
 ng generate component nav-bar
 ```
 
-<span data-ttu-id="51182-126">コマンドが完了したら、 `./src/app/nav-bar/nav-bar.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-126">Once the command completes, open the `./src/app/nav-bar/nav-bar.component.ts` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-126">コマンドが完了したら、 `./src/app/nav-bar/nav-bar.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-126">Once the command completes, open the `./src/app/nav-bar/nav-bar.component.ts` file and replace its contents with the following.</span></span>
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';
@@ -146,7 +146,7 @@ export class NavBarComponent implements OnInit {
 }
 ```
 
-<span data-ttu-id="51182-127">`./src/app/nav-bar/nav-bar.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-127">Open the `./src/app/nav-bar/nav-bar.component.html` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-127">`./src/app/nav-bar/nav-bar.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-127">Open the `./src/app/nav-bar/nav-bar.component.html` file and replace its contents with the following.</span></span>
 
 ```html
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -199,13 +199,13 @@ export class NavBarComponent implements OnInit {
 </nav>
 ```
 
-<span data-ttu-id="51182-128">次に、アプリのホームページを作成します。</span><span class="sxs-lookup"><span data-stu-id="51182-128">Next, create a home page for the app.</span></span> <span data-ttu-id="51182-129">CLI で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="51182-129">Run the following command in your CLI.</span></span>
+<span data-ttu-id="9e427-128">次に、アプリのホームページを作成します。</span><span class="sxs-lookup"><span data-stu-id="9e427-128">Next, create a home page for the app.</span></span> <span data-ttu-id="9e427-129">CLI で次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9e427-129">Run the following command in your CLI.</span></span>
 
 ```Shell
 ng generate component home
 ```
 
-<span data-ttu-id="51182-130">コマンドが完了したら、 `./src/app/home/home.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-130">Once the command completes, open the `./src/app/home/home.component.ts` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-130">コマンドが完了したら、 `./src/app/home/home.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-130">Once the command completes, open the `./src/app/home/home.component.ts` file and replace its contents with the following.</span></span>
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';
@@ -240,7 +240,7 @@ export class HomeComponent implements OnInit {
 }
 ```
 
-<span data-ttu-id="51182-131">その後、 `./src/app/home/home.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-131">Then open the `./src/app/home/home.component.html` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-131">その後、 `./src/app/home/home.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-131">Then open the `./src/app/home/home.component.html` file and replace its contents with the following.</span></span>
 
 ```html
 <div class="jumbotron">
@@ -257,7 +257,7 @@ export class HomeComponent implements OnInit {
 </div>
 ```
 
-<span data-ttu-id="51182-132">これで、アプリがユーザーにメッセージを表示するために使用できる通知サービスを作成できるようになります。</span><span class="sxs-lookup"><span data-stu-id="51182-132">Now create an alert service that the app can use to display messages to the user.</span></span> <span data-ttu-id="51182-133">最初に、単純な`Alert`クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="51182-133">Start by creating a simple `Alert` class.</span></span> <span data-ttu-id="51182-134">という名前`./src/app` `alert.ts`のディレクトリに新しいファイルを作成し、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="51182-134">Create a new file in the `./src/app` directory named `alert.ts` and add the following code.</span></span>
+<span data-ttu-id="9e427-132">これで、アプリがユーザーにメッセージを表示するために使用できる通知サービスを作成できるようになります。</span><span class="sxs-lookup"><span data-stu-id="9e427-132">Now create an alert service that the app can use to display messages to the user.</span></span> <span data-ttu-id="9e427-133">最初に、単純な`Alert`クラスを作成します。</span><span class="sxs-lookup"><span data-stu-id="9e427-133">Start by creating a simple `Alert` class.</span></span> <span data-ttu-id="9e427-134">という名前`./src/app` `alert.ts`のディレクトリに新しいファイルを作成し、次のコードを追加します。</span><span class="sxs-lookup"><span data-stu-id="9e427-134">Create a new file in the `./src/app` directory named `alert.ts` and add the following code.</span></span>
 
 ```TypeScript
 export class Alert {
@@ -266,13 +266,13 @@ export class Alert {
 }
 ```
 
-<span data-ttu-id="51182-135">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="51182-135">In your CLI, run the following command.</span></span>
+<span data-ttu-id="9e427-135">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9e427-135">In your CLI, run the following command.</span></span>
 
 ```Shell
 ng generate service alerts
 ```
 
-<span data-ttu-id="51182-136">`./src/app/alerts.service.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-136">Open the `./src/app/alerts.service.ts` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-136">`./src/app/alerts.service.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-136">Open the `./src/app/alerts.service.ts` file and replace its contents with the following.</span></span>
 
 ```TypeScript
 import { Injectable } from '@angular/core';
@@ -295,13 +295,13 @@ export class AlertsService {
 }
 ```
 
-<span data-ttu-id="51182-137">通知を表示するための警告コンポーネントを生成するようになりました。</span><span class="sxs-lookup"><span data-stu-id="51182-137">Now generate an alerts component to display alerts.</span></span> <span data-ttu-id="51182-138">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="51182-138">In your CLI, run the following command.</span></span>
+<span data-ttu-id="9e427-137">通知を表示するための警告コンポーネントを生成するようになりました。</span><span class="sxs-lookup"><span data-stu-id="9e427-137">Now generate an alerts component to display alerts.</span></span> <span data-ttu-id="9e427-138">CLI で、次のコマンドを実行します。</span><span class="sxs-lookup"><span data-stu-id="9e427-138">In your CLI, run the following command.</span></span>
 
 ```Shell
 ng generate component alerts
 ```
 
-<span data-ttu-id="51182-139">コマンドが完了したら、 `./src/app/alerts/alerts.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-139">Once the command completes, open the `./src/app/alerts/alerts.component.ts` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-139">コマンドが完了したら、 `./src/app/alerts/alerts.component.ts`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-139">Once the command completes, open the `./src/app/alerts/alerts.component.ts` file and replace its contents with the following.</span></span>
 
 ```TypeScript
 import { Component, OnInit } from '@angular/core';
@@ -326,7 +326,7 @@ export class AlertsComponent implements OnInit {
 }
 ```
 
-<span data-ttu-id="51182-140">その後、 `./src/app/alerts/alerts.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-140">Then open the `./src/app/alerts/alerts.component.html` file and replace its contents with the following.</span></span>
+<span data-ttu-id="9e427-140">その後、 `./src/app/alerts/alerts.component.html`ファイルを開き、その内容を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-140">Then open the `./src/app/alerts/alerts.component.html` file and replace its contents with the following.</span></span>
 
 ```html
 <div *ngFor="let alert of alertsService.alerts">
@@ -337,7 +337,7 @@ export class AlertsComponent implements OnInit {
 </div>
 ```
 
-<span data-ttu-id="51182-141">これらの基本コンポーネントが定義されたので、アプリを更新して使用します。</span><span class="sxs-lookup"><span data-stu-id="51182-141">Now with those basic components defined, update the app to use them.</span></span> <span data-ttu-id="51182-142">最初に、 `./src/app/app-routing.module.ts`ファイルを開き、 `const routes: Routes = [];`行を次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-142">First, open the `./src/app/app-routing.module.ts` file and replace the `const routes: Routes = [];` line with the following code.</span></span>
+<span data-ttu-id="9e427-141">これらの基本コンポーネントが定義されたので、アプリを更新して使用します。</span><span class="sxs-lookup"><span data-stu-id="9e427-141">Now with those basic components defined, update the app to use them.</span></span> <span data-ttu-id="9e427-142">最初に、 `./src/app/app-routing.module.ts`ファイルを開き、 `const routes: Routes = [];`行を次のコードに置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-142">First, open the `./src/app/app-routing.module.ts` file and replace the `const routes: Routes = [];` line with the following code.</span></span>
 
 ```TypeScript
 import { HomeComponent } from './home/home.component';
@@ -347,7 +347,7 @@ const routes: Routes = [
 ];
 ```
 
-<span data-ttu-id="51182-143">`./src/app/app.component.html` ファイルを開き、そのコンテンツ全体を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="51182-143">Open the `./src/app/app.component.html` file and replace its entire contents with the following.</span></span>
+<span data-ttu-id="9e427-143">`./src/app/app.component.html` ファイルを開き、そのコンテンツ全体を次のように置き換えます。</span><span class="sxs-lookup"><span data-stu-id="9e427-143">Open the `./src/app/app.component.html` file and replace its entire contents with the following.</span></span>
 
 ```html
 <app-nav-bar></app-nav-bar>
@@ -357,6 +357,6 @@ const routes: Routes = [
 </main>
 ```
 
-<span data-ttu-id="51182-144">すべての変更を保存し、ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="51182-144">Save all of your changes and refresh the page.</span></span> <span data-ttu-id="51182-145">この時点で、アプリの外観は大きく異なります。</span><span class="sxs-lookup"><span data-stu-id="51182-145">Now, the app should look very different.</span></span>
+<span data-ttu-id="9e427-144">すべての変更を保存し、ページを更新します。</span><span class="sxs-lookup"><span data-stu-id="9e427-144">Save all of your changes and refresh the page.</span></span> <span data-ttu-id="9e427-145">この時点で、アプリの外観は大きく異なります。</span><span class="sxs-lookup"><span data-stu-id="9e427-145">Now, the app should look very different.</span></span>
 
 ![再設計されたホームページのスクリーンショット](images/create-app-01.png)
