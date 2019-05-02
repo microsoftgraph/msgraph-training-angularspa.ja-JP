@@ -1,10 +1,10 @@
-# <a name="microsoft-graph-training-module---build-angular-single-page-apps-with-microsoft-graph"></a>microsoft graph トレーニングモジュール-microsoft graph を使用した単一ページのアプリケーションをビルドする
+# <a name="microsoft-graph-training-module---build-angular-single-page-apps-with-microsoft-graph"></a>Microsoft Graph トレーニングモジュール-Microsoft Graph を使用した単一ページのアプリケーションをビルドする
 
 このモジュールでは、Office 365 のデータにアクセスするための単一ページアプリケーションを作成するときに Microsoft Graph を使用する方法を紹介します。
 
 ## <a name="lab---angular-single-page-apps-with-the-microsoft-graph"></a>Microsoft Graph を使用した単一ページのラボアプリケーション
 
-このラボでは、Microsoft Graph を使用して Office 365 のデータにアクセスする認証 & 認証用に azure Active Directory (azure AD) で構成された、角度付きのシングルページアプリケーションを作成します。
+このラボでは、Microsoft Graph を使用して Office 365 のデータにアクセスする認証 & 認証用に Azure Active Directory (Azure AD) で構成された、角度付きのシングルページアプリケーションを作成します。
 
 - [Microsoft Graph の角度のチュートリアル](https://docs.microsoft.com/graph/tutorials/angular)
 

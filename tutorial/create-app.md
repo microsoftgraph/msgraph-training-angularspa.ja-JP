@@ -26,8 +26,8 @@ ng serve --open
 
 - スタイル設定と共通コンポーネントの[ブートストラップ](https://github.com/twbs/bootstrap)。
 - 角度からブートストラップコンポーネントを使用するための[ng](https://github.com/ng-bootstrap/ng-bootstrap) 。
-- 角度で fontawesome アイコンを使用する[fontawesome](https://github.com/FortAwesome/angular-fontawesome) 。
-- サンプルで使用されている fontawesome アイコンの[fontawesome](https://github.com/FortAwesome/Font-Awesome)、[フリー (標準)](https://github.com/FortAwesome/Font-Awesome)の svg アイコン、および[フリーソリッドの svg アイコン](https://github.com/FortAwesome/Font-Awesome)。
+- 角度で FontAwesome アイコンを使用する[fontawesome](https://github.com/FortAwesome/angular-fontawesome) 。
+- サンプルで使用されている FontAwesome アイコンの[fontawesome](https://github.com/FortAwesome/Font-Awesome)、[フリー (標準)](https://github.com/FortAwesome/Font-Awesome)の svg アイコン、および[フリーソリッドの svg アイコン](https://github.com/FortAwesome/Font-Awesome)。
 - 日付と時刻を書式設定するための[モーメント](https://github.com/moment/moment)。
 - Azure Active Directory に認証し、アクセストークンを取得するための[角度](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md)。
 - [rxjs](https://github.com/ReactiveX/rxjs/tree/master/compat)。 `msal-angular`パッケージに必要です。
