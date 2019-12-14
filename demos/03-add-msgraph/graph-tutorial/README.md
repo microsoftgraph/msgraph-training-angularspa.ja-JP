@@ -1,6 +1,6 @@
 # <a name="graphtutorial"></a>GraphTutorial
 
-このプロジェクトは、[角度 CLI](https://github.com/angular/angular-cli)バージョン7.1.1 を使用して生成されました。
+このプロジェクトは、[角度 CLI](https://github.com/angular/angular-cli)バージョン8.3.20 を使用して生成されました。
 
 ## <a name="development-server"></a>開発サーバー
 

@@ -126,7 +126,7 @@ export class AuthService {
 - ファイル`import { AuthService } from '../auth.service';`の先頭にを追加します。
 - クラスから`authenticated`プロパティ`user`とプロパティを削除し、それらを設定するコードを削除`ngOnInit`します。
 - に`AuthService` `constructor`次のパラメーターを追加して、を`private authService: AuthService`挿入します。
-- 既存`signIn`のメソッドを次のように置き換えます。
+- 既存の `signIn` メソッドを次のメソッドに置き換えます。
 
     ```TypeScript
     async signIn(): Promise<void> {
@@ -134,7 +134,7 @@ export class AuthService {
     }
     ```
 
-- 既存`signOut`のメソッドを次のように置き換えます。
+- 既存の `signOut` メソッドを次のメソッドに置き換えます。
 
     ```TypeScript
     signOut(): void {
@@ -278,6 +278,13 @@ private async getUser(): Promise<User> {
 
   return user;
 }
+```
+
+アクセストークンを表示する警告を追加`getAccessToken`するメソッドで、次のコードを見つけて削除します。
+
+```TypeScript
+// Temporary to display token in an error box
+if (result) this.alertsService.add('Token acquired', result);
 ```
 
 `signIn`メソッドから次のコードを見つけ、削除します。
