@@ -2,10 +2,10 @@
 
 このセクションでは、新しい角度プロジェクトを作成します。
 
-1. コマンドラインインターフェイス (CLI) を開き、ファイルを作成する権限があるディレクトリに移動し、次のコマンドを実行して、[角度付き CLI](https://www.npmjs.com/package/@angular/cli)ツールをインストールし、新しい角度のアプリを作成します。
+1. コマンドラインインターフェイス (CLI) を開き、ファイルを作成する権限があるディレクトリに移動し、次のコマンドを実行して、 [角度付き CLI](https://www.npmjs.com/package/@angular/cli) ツールをインストールし、新しい角度のアプリを作成します。
 
     ```Shell
-    npm install -g @angular/cli@9.0.6
+    npm install -g @angular/cli@10.1.7
     ng new graph-tutorial
     ```
 
@@ -16,13 +16,13 @@
     ? Which stylesheet format would you like to use? CSS
     ```
 
-1. コマンドが完了したら、CLI の`graph-tutorial`ディレクトリに移動し、次のコマンドを実行してローカル web サーバーを開始します。
+1. コマンドが完了したら、 `graph-tutorial` CLI のディレクトリに移動し、次のコマンドを実行してローカル web サーバーを開始します。
 
     ```Shell
     ng serve --open
     ```
 
-1. 既定のブラウザーが開き[https://localhost:4200/](https://localhost:4200) 、既定の角度ページが表示されます。 ブラウザーが開かない場合は、それを開き、 [https://localhost:4200/](https://localhost:4200)を参照して、新しいアプリが動作することを確認します。
+1. 既定のブラウザーが開き、既定の角度ページが表示さ [https://localhost:4200/](https://localhost:4200) れます。 ブラウザーが開かない場合は、それを開き、を参照して [https://localhost:4200/](https://localhost:4200) 、新しいアプリが動作することを確認します。
 
 ## <a name="add-node-packages"></a>ノードパッケージを追加する
 
@@ -30,19 +30,17 @@
 
 - スタイル設定と共通コンポーネントの[ブートストラップ](https://github.com/twbs/bootstrap)。
 - 角度からブートストラップコンポーネントを使用するための[ng](https://github.com/ng-bootstrap/ng-bootstrap) 。
-- 角度で FontAwesome アイコンを使用する[fontawesome](https://github.com/FortAwesome/angular-fontawesome) 。
-- サンプルで使用されている FontAwesome アイコンの[fontawesome](https://github.com/FortAwesome/Font-Awesome)、[フリー (標準)](https://github.com/FortAwesome/Font-Awesome)の svg アイコン、および[フリーソリッドの svg アイコン](https://github.com/FortAwesome/Font-Awesome)。
 - 日付と時刻を書式設定するための[モーメント](https://github.com/moment/moment)。
+- [windows-iana](https://github.com/rubenillodo/windows-iana)
 - Azure Active Directory に認証し、アクセストークンを取得するための[角度](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-angular/README.md)。
 - [microsoft graph-](https://github.com/microsoftgraph/msgraph-sdk-javascript) microsoft graph に電話をかけるためのクライアントです。
 
 1. CLI で次のコマンドを実行します。
 
     ```Shell
-    npm install bootstrap@4.4.1 @fortawesome/angular-fontawesome@0.6.0 @fortawesome/fontawesome-svg-core@1.2.27
-    npm install @fortawesome/free-regular-svg-icons@5.12.1 @fortawesome/free-solid-svg-icons@5.12.1
-    npm install moment@2.24.0 moment-timezone@0.5.28 @ng-bootstrap/ng-bootstrap@6.0.0
-    npm install msal@1.2.1 @azure/msal-angular@1.0.0-beta.4 @microsoft/microsoft-graph-client@2.0.0
+    npm install bootstrap@4.5.3 @ng-bootstrap/ng-bootstrap@7.0.0 msal@1.4.2 @azure/msal-angular@1.1.1
+    npm install moment@2.29.1 moment-timezone@0.5.31 windows-iana@4.2.1
+    npm install @microsoft/microsoft-graph-client@2.1.0 @microsoft/microsoft-graph-types@1.24.0
     ```
 
 1. CLI で次のコマンドを実行して、角度ローカライズパッケージ (ng で必要) を追加します。
@@ -55,51 +53,38 @@
 
 このセクションでは、アプリのユーザーインターフェイスを作成します。
 
-1. `./src/styles.css`を開き、次の行を追加します。
+1. **/Src/styles.css**を開き、次の行を追加します。
 
     :::code language="css" source="../demo/graph-tutorial/src/styles.css":::
 
-1. ブートストラップおよび FontAwesome モジュールをアプリに追加します。 を`./src/app/app.module.ts`開き、その内容を次のように置き換えます。
+1. ブートストラップモジュールをアプリに追加します。 **/Src/app/app.module.ts**を開き、その内容を次のように置き換えます。
 
-    ```TypeScript
+    ```typescript
     import { BrowserModule } from '@angular/platform-browser';
+    import { FormsModule } from '@angular/forms';
     import { NgModule } from '@angular/core';
     import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-    import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-    import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-    import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 
     import { AppRoutingModule } from './app-routing.module';
     import { AppComponent } from './app.component';
-    import { NavBarComponent } from './nav-bar/nav-bar.component';
-    import { HomeComponent } from './home/home.component';
-    import { AlertsComponent } from './alerts/alerts.component';
 
     @NgModule({
       declarations: [
-        AppComponent,
-        NavBarComponent,
-        HomeComponent,
-        AlertsComponent
+        AppComponent
       ],
       imports: [
         BrowserModule,
+        FormsModule,
         AppRoutingModule,
-        NgbModule,
-        FontAwesomeModule
+        NgbModule
       ],
       providers: [],
       bootstrap: [AppComponent]
     })
-    export class AppModule {
-      constructor(library: FaIconLibrary) {
-        // Register the FontAwesome icons used by the app
-        library.addIcons(faExternalLinkAlt, faUserCircle);
-      }
-     }
+    export class AppModule { }
     ```
 
-1. という名前`./src/app` `user.ts`のフォルダーに新しいファイルを作成し、次のコードを追加します。
+1. **/Src/app**フォルダーに、 **ts**という新しいファイルを作成し、次のコードを追加します。
 
     :::code language="typescript" source="../demo/graph-tutorial/src/app/user.ts" id="user":::
 
@@ -109,9 +94,9 @@
     ng generate component nav-bar
     ```
 
-1. コマンドが完了したら、 `./src/app/nav-bar/nav-bar.component.ts`ファイルを開き、その内容を次のように置き換えます。
+1. コマンドが完了したら、 **/src/app/nav-bar/nav-bar.component.ts** を開き、その内容を次のように置き換えます。
 
-    ```TypeScript
+    ```typescript
     import { Component, OnInit } from '@angular/core';
 
     import { User } from '../user';
@@ -162,7 +147,7 @@
     }
     ```
 
-1. `./src/app/nav-bar/nav-bar.component.html`ファイルを開き、その内容を次のように置き換えます。
+1. **/Src/app/nav-bar/nav-bar.component.html**を開き、その内容を次のように置き換えます。
 
     :::code language="html" source="../demo/graph-tutorial/src/app/nav-bar/nav-bar.component.html" id="navHtml":::
 
@@ -172,9 +157,9 @@
     ng generate component home
     ```
 
-1. コマンドが完了したら、 `./src/app/home/home.component.ts`ファイルを開き、その内容を次のように置き換えます。
+1. コマンドが完了したら、 **/src/app/home/home.component.ts** を開き、その内容を次のように置き換えます。
 
-    ```TypeScript
+    ```typescript
     import { Component, OnInit } from '@angular/core';
 
     import { User } from '../user';
@@ -209,11 +194,11 @@
     }
     ```
 
-1. `./src/app/home/home.component.html`ファイルを開き、その内容を次のように置き換えます。
+1. **/Src/app/home/home.component.html**を開き、その内容を次のように置き換えます。
 
     :::code language="html" source="../demo/graph-tutorial/src/app/home/home.component.html" id="homeHtml":::
 
-1. 単純な`Alert`クラスを作成します。 という名前`./src/app` `alert.ts`のディレクトリに新しいファイルを作成し、次のコードを追加します。
+1. 単純なクラスを作成 `Alert` します。 **/Src/app**という名前のディレクトリに新しいファイルを作成し、次のコードを**追加します**。
 
     :::code language="typescript" source="../demo/graph-tutorial/src/app/alert.ts" id="alert":::
 
@@ -223,7 +208,7 @@
     ng generate service alerts
     ```
 
-1. `./src/app/alerts.service.ts`ファイルを開き、その内容を次のように置き換えます。
+1. **/Src/app/alerts.service.ts**を開き、その内容を次のように置き換えます。
 
     :::code language="typescript" source="../demo/graph-tutorial/src/app/alerts.service.ts" id="alertsService":::
 
@@ -233,15 +218,15 @@
     ng generate component alerts
     ```
 
-1. コマンドが完了したら、 `./src/app/alerts/alerts.component.ts`ファイルを開き、その内容を次のように置き換えます。
+1. コマンドが完了したら、 **/src/app/alerts/alerts.component.ts** を開き、その内容を次のように置き換えます。
 
     :::code language="typescript" source="../demo/graph-tutorial/src/app/alerts/alerts.component.ts" id="alertComponent":::
 
-1. `./src/app/alerts/alerts.component.html`ファイルを開き、その内容を次のように置き換えます。
+1. **/Src/app/alerts/alerts.component.html**を開き、その内容を次のように置き換えます。
 
     :::code language="html" source="../demo/graph-tutorial/src/app/alerts/alerts.component.html" id="alertHtml":::
 
-1. `./src/app/app-routing.module.ts`ファイルを開き、 `const routes: Routes = [];`行を次のコードに置き換えます。
+1. **/Src/app/app-routing.module.ts**を開き、行を `const routes: Routes = [];` 次のコードに置き換えます。
 
     ```typescript
     import { HomeComponent } from './home/home.component';
@@ -251,9 +236,11 @@
     ];
     ```
 
-1. `./src/app/app.component.html` ファイルを開き、そのコンテンツ全体を次のように置き換えます。
+1. **/Src/app/app.component.html**を開き、内容全体を次のように置き換えます。
 
     :::code language="html" source="../demo/graph-tutorial/src/app/app.component.html" id="appHtml":::
+
+1. **/Src/assets**ディレクトリに、選択した名前の**no-profile-photo.png**のイメージファイルを追加します。 この画像は、ユーザーが Microsoft Graph に写真を持たない場合にユーザーの写真として使用されます。
 
 すべての変更を保存し、ページを更新します。 この時点で、アプリの外観は大きく異なります。
 
